@@ -63,8 +63,18 @@ main {
   border-radius: 8px;
   font-size: 14px;
   padding: 10px 16px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .profile-actions a:hover {
   background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .profile-card {
+    padding: 30px;
+  }
 }
