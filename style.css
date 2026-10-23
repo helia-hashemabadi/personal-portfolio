@@ -335,6 +335,41 @@ a:focus-visible {
   transform: translateY(-2px);
 }
 
+.contact-divider {
+  border: none;
+  height: 1px;
+  background-color: #303950;
+  margin: 18px 0;
+}
+
+/* EMAIL COPY */
+.email-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.email-copy span {
+  color: #a5b4fc;
+  font-size: 14px;
+}
+
+.email-copy button {
+  background: transparent;
+  color: #a5b4fc;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-copy button:hover {
+  background: #8b5cf6;
+  color: white;
+}
+
 @media (min-width: 768px) {
   .profile-card {
     padding: 30px;
