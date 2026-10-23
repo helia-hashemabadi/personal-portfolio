@@ -12,7 +12,6 @@ body {
   background-color: #0b1020;
   color: #f1f5f9;
   font-family: Arial, Helvetica, sans-serif;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +28,11 @@ main {
   width: 100%;
   gap: 32px;
   padding: 40px 20px;
+}
+
+a:focus-visible {
+  outline: 2px solid #f1f5f9;
+  outline-offset: 4px;
 }
 
 /* PROFILE CARD */
@@ -117,7 +121,7 @@ main {
 
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px #8b5cf6;
+  box-shadow: 0 8px 24px #8b5cf626;
 }
 
 .project-img {
@@ -142,7 +146,6 @@ main {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 16px;
-  padding: 16px;
 }
 
 .project-links {
@@ -173,6 +176,31 @@ main {
 .project-links a:hover {
   background-color: #6d28d9;
   transform: translateY(-2px);
+}
+
+/* SKILLS SECTION */
+.skills-section {
+  width: 100%;
+  background-color: #141b2d;
+  padding: 24px 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.skills-list span {
+  background-color: #8b5cf6;
+  color: #f1f5f9;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 /* RESUME SECTION */
