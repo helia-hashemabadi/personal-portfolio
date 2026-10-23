@@ -118,14 +118,19 @@ a:focus-visible {
 .skills-groups {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  margin-top: 4px;
+  gap: 16px;
+  margin-top: 12px;
 }
 
 .skills-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: #0f172a;
+  border: 1px solid #303950;
+  border-radius: 14px;
+  max-width: 320px;
 }
 
 .skills-section h3 {
@@ -137,9 +142,8 @@ a:focus-visible {
 
 .skills-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   list-style: none;
 }
 
@@ -398,17 +402,13 @@ a:focus-visible {
     font-size: 16px;
   }
   .skills-groups {
+    flex-direction: row;
     gap: 24px;
     margin-top: 24px;
-    align-items: stretch;
   }
   .skills-group {
     flex: 1;
-    max-width: 260px;
-    padding: 20px;
-    background-color: #0f172a;
-    border: 1px solid #303950;
-    border-radius: 14px;
+    max-width: 300px;
   }
   .skills-section h3 {
     margin-top: 0;
@@ -442,15 +442,115 @@ a:focus-visible {
     padding: 32px 28px;
   }
   .resume-section p,
-  .contact-sectionp {
+  .contact-section p {
     font-size: 16px;
   }
   .email-copy {
     flex-wrap: wrap;
     gap: 12px;
   }
+  padding: 10px 14px;
 }
 
 /* LAPTOP & DESKTOP */
 @media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    padding: 48px 40px;
+    gap: 32px;
+  }
+  .profile-card {
+    max-width: 760px;
+    padding: 36px;
+  }
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .profile-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+  .profile-actions a {
+    flex: 0 1 auto;
+    min-width: 130px;
+  }
+  .about-section {
+    padding: 40px;
+  }
+  .about-section p {
+    max-width: 760px;
+    margin: 16px auto 0;
+    font-size: 16px;
+  }
+  .skills-section {
+    padding: 40px;
+  }
+  .skills-groups {
+    gap: 32px;
+    margin-top: 28px;
+  }
+  .skills-group {
+    flex: 0 1 300px;
+    padding: 24px;
+  }
+  .skills-section h3 {
+    font-size: 20px;
+  }
+  .skills-list {
+    gap: 12px;
+  }
+  .skills-list li {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+  .projects-section {
+    padding: 0;
+  }
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: 28px auto 0;
+    align-items: stretch;
+  }
+  .project-img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+  }
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+  }
+  .project-links {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  .project-links a {
+    flex: 1;
+  }
+  .resume-section {
+    padding: 40px;
+  }
+  .resume-section p {
+    max-width: 760px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+  }
+  .contact-section {
+    padding: 40px;
+  }
+  .contact-section p {
+    font-size: 16px;
+  }
+  .email-copy {
+    gap: 12px;
+  }
 }
