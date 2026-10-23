@@ -370,8 +370,87 @@ a:focus-visible {
   color: white;
 }
 
+/* TABLET */
 @media (min-width: 768px) {
+  main {
+    max-width: 960px;
+    padding: 36px 28px;
+    margin: 0 auto;
+    gap: 28px;
+  }
   .profile-card {
+    width: 100%;
+    max-width: 600px;
     padding: 30px;
   }
+  .profile-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profile-actions a {
+    flex: 1 1 140px;
+  }
+  .about-section {
+    padding: 32px 28px;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  .skills-groups {
+    gap: 24px;
+    margin-top: 24px;
+    align-items: stretch;
+  }
+  .skills-group {
+    flex: 1;
+    max-width: 260px;
+    padding: 20px;
+    background-color: #0f172a;
+    border: 1px solid #303950;
+    border-radius: 14px;
+  }
+  .skills-section h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  .skills-list {
+    gap: 10px;
+  }
+  .projects-section {
+    padding: 0;
+  }
+  .project-card {
+    max-width: 650px;
+    margin: 24px auto 0;
+  }
+  .project-img {
+    height: 240px;
+  }
+  .project-content {
+    padding: 24px;
+  }
+  .project-links {
+    flex-direction: row;
+  }
+  .project-links a {
+    flex: 1;
+  }
+  .resume-section,
+  .contact-section {
+    padding: 32px 28px;
+  }
+  .resume-section p,
+  .contact-sectionp {
+    font-size: 16px;
+  }
+  .email-copy {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* LAPTOP & DESKTOP */
+@media (min-width: 1024px) {
 }
