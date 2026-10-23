@@ -90,6 +90,76 @@ a:focus-visible {
   transform: translateY(-2px);
 }
 
+/* ABOUT ME SECTION */
+.about-section {
+  width: 100%;
+  background-color: #141b2d;
+  border-radius: 16px;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.about-section p {
+  color: #f1f5f9;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+/* SKILLS SECTION */
+.skills-section {
+  width: 100%;
+  background-color: #141b2d;
+  padding: 24px 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.skills-groups {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 4px;
+}
+
+.skills-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section h3 {
+  color: #a5b4fc;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: transparent;
+  color: #f1f5f9;
+  border: 2px solid #8b5cf6;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 4px 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-2px);
+  background-color: #6d28d9;
+}
+
 /* PROJECT SECTION */
 .projects-section {
   width: 100%;
@@ -178,31 +248,6 @@ a:focus-visible {
   transform: translateY(-2px);
 }
 
-/* SKILLS SECTION */
-.skills-section {
-  width: 100%;
-  background-color: #141b2d;
-  padding: 24px 16px;
-  border-radius: 16px;
-  text-align: center;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.skills-list span {
-  background-color: #8b5cf6;
-  color: #f1f5f9;
-  border-radius: 8px;
-  font-size: 14px;
-  padding: 8px 12px;
-}
-
 /* RESUME SECTION */
 .resume-section {
   width: 100%;
@@ -267,7 +312,7 @@ a:focus-visible {
 
 .contact-links {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 10px;
 }
 
