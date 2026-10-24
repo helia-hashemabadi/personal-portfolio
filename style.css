@@ -11,12 +11,24 @@ html {
 body {
   background-color: #0b1020;
   color: #f1f5f9;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-bottom: 16px;
 }
 
 main {
@@ -30,7 +42,8 @@ main {
   padding: 40px 20px;
 }
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
   outline: 2px solid #f1f5f9;
   outline-offset: 4px;
 }
@@ -156,6 +169,7 @@ a:focus-visible {
   padding: 4px 10px;
   transition:
     transform 0.3s ease,
+    background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
@@ -449,7 +463,6 @@ a:focus-visible {
     flex-wrap: wrap;
     gap: 12px;
   }
-  padding: 10px 14px;
 }
 
 /* LAPTOP & DESKTOP */
@@ -552,5 +565,17 @@ a:focus-visible {
   }
   .email-copy {
     gap: 12px;
+  }
+}
+
+/* Reduce animations for users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
