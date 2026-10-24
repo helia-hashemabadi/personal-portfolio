@@ -131,6 +131,7 @@ button:focus-visible {
 .skills-groups {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 16px;
   margin-top: 12px;
 }
@@ -363,6 +364,7 @@ button:focus-visible {
 /* EMAIL COPY */
 .email-copy {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 8px;
