@@ -1,6 +1,8 @@
 # Personal Portfolio
 
-A personal portfolio website built with HTML and CSS to showcase my profile, skills, projects, and contact information.
+A responsive personal portfolio website built with HTML5 and CSS3 to showcase my profile, technical skills, project work, and contact information.
+
+The website features a modern dark theme, responsive layouts, CSS animations, interactive hover effects, and smooth scrolling.
 
 ## Live Demo
 
@@ -8,12 +10,15 @@ A personal portfolio website built with HTML and CSS to showcase my profile, ski
 
 ## Features
 
-- Personal introduction
-- Skills section
-- Project showcase
-- Contact information
-- Responsive design
-- Hover effects and smooth scrolling
+- Personal introduction and profile card
+- Technical skills showcase
+- Project showcase with GitHub and live demo links
+- Responsive design for mobile, tablet, and desktop
+- CSS fade-in animations
+- Interactive hover effects
+- Smooth scrolling navigation
+- Resume and contact sections
+- Accessible keyboard focus indicators
 
 ## Technologies Used
 
@@ -37,10 +42,10 @@ personal-portfolio/
 
 ## Future Improvements
 
-- Improve the visual design
-- Add more projects
+- Add more portfolio projects
 - Complete the resume download feature
-- Add JavaScript functionality
+- Add JavaScript functionality for interactive features
+- Continue improving accessibility and responsive design
 
 ## Author
 
