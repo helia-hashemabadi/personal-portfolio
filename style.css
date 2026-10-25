@@ -18,7 +18,7 @@ body {
   background-size: 100% 100%;
   color: #f1f5f9;
   font-family: "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.65;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,8 +33,16 @@ h3 {
   letter-spacing: -0.02em;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 h2 {
-  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 main {
@@ -44,8 +52,8 @@ main {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  gap: 32px;
-  padding: 40px 20px;
+  gap: 40px;
+  padding: 48px 24px;
 }
 
 a:focus-visible,
@@ -69,6 +77,7 @@ button:focus-visible {
     transform 0.3s ease,
     box-shadow 0.3s ease,
     border-color 0.3s ease;
+  animation: fadeInUp 0.8s ease-out both;
 }
 
 .profile-card:hover {
@@ -131,8 +140,9 @@ button:focus-visible {
   border: 1px solid #8b5cf633;
   border-radius: 18px;
   text-align: center;
-  padding: 24px 16px;
+  padding: 28px;
   box-shadow: 0 8px 24px #0000001a;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
   transition:
     border-color 0.3s ease,
     box-shadow 0.3s ease;
@@ -145,7 +155,7 @@ button:focus-visible {
 
 .about-section p {
   color: #f1f5f9;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   margin-top: 12px;
 }
@@ -155,11 +165,12 @@ button:focus-visible {
 .skills-section {
   width: 100%;
   background: linear-gradient(145deg, #191f35, #11182b);
-  padding: 24px 16px;
+  padding: 28px;
   border: 1px solid #22d3ee26;
   border-radius: 18px;
   text-align: center;
   box-shadow: 0 8px 24px #0000001a;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .skills-groups {
@@ -226,8 +237,7 @@ button:focus-visible {
 
 .projects-section h2 {
   color: #f1f5f9;
-  margin-bottom: 12px;
-  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 .projects-section p {
@@ -238,13 +248,14 @@ button:focus-visible {
 .project-card {
   width: 100%;
   max-width: 650px;
-  margin: 24px auto 0;
+  margin: 28px auto 0;
   overflow: hidden;
   background: linear-gradient(145deg, #11182b, #0f172a);
   border: 1px solid #8b5cf64d;
   border-radius: 18px;
   text-align: left;
   box-shadow: 0 8px 24px #00000026;
+  animation: fadeIn 0.8s ease-out 0.3s both;
   transition:
     transform 0.3s ease,
     border-color 0.3s ease,
@@ -278,7 +289,7 @@ button:focus-visible {
 
 .project-content p {
   color: #c4b5fd;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -338,6 +349,7 @@ button:focus-visible {
   border-radius: 18px;
   text-align: center;
   box-shadow: 0 8px 24px #0000001a;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
   transition:
     border-color 0.3s ease,
     box-shadow 0.3s ease;
@@ -397,6 +409,7 @@ button:focus-visible {
   border-radius: 18px;
   text-align: center;
   box-shadow: 0 8px 24px #0000001a;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
   transition:
     border-color 0.3s ease,
     box-shadow 0.3s ease;
@@ -506,9 +519,9 @@ button:focus-visible {
 @media (min-width: 768px) {
   main {
     max-width: 960px;
-    padding: 36px 28px;
+    padding: 48px 28px;
     margin: 0 auto;
-    gap: 28px;
+    gap: 32px;
   }
   .profile-card {
     width: 100%;
@@ -584,7 +597,7 @@ button:focus-visible {
   main {
     max-width: 1200px;
     padding: 48px 40px;
-    gap: 32px;
+    gap: 36px;
   }
   .profile-card {
     max-width: 760px;
@@ -693,5 +706,27 @@ button:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
