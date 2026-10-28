@@ -277,7 +277,10 @@ button:focus-visible {
 }
 
 .project-content {
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 16px;
+  margin-bottom: 20px;
 }
 
 .project-content h3 {
