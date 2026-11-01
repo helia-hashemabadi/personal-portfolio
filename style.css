@@ -164,34 +164,35 @@ button:focus-visible {
 
 .skills-section {
   width: 100%;
-  background: linear-gradient(145deg, #191f35, #11182b);
-  padding: 28px;
-  border: 1px solid #22d3ee26;
-  border-radius: 18px;
   text-align: center;
-  box-shadow: 0 8px 24px #0000001a;
   animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .skills-groups {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
-  margin-top: 12px;
+  margin-top: 24px;
 }
 
 .skills-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  flex: 1 1 200px;
+  width: 100%;
+  max-width: 320px;
+  padding: 24px 16px;
   background: linear-gradient(145deg, #11182b, #0f172a);
   border: 1px solid #8b5cf64d;
   border-radius: 16px;
-  max-width: 320px;
   box-shadow: 0 4px 16px #0000001a;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .skills-section h3 {
@@ -273,7 +274,8 @@ button:focus-visible {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid #8b5cf64d;
+  object-position: center;
+  border-bottom: 2px solid #8b5cf64d;
 }
 
 .project-content {
@@ -570,7 +572,7 @@ button:focus-visible {
     margin: 24px auto 0;
   }
   .project-img {
-    height: 240px;
+    height: 280px;
   }
   .project-content {
     padding: 24px;
@@ -666,6 +668,7 @@ button:focus-visible {
     height: 100%;
     min-height: 300px;
     object-fit: cover;
+    border-right: 2px solid #8b5cf64d;
   }
   .project-content {
     display: flex;
