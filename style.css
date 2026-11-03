@@ -90,6 +90,7 @@ button:focus-visible {
 
 .profile-card p {
   color: #a5b4fc;
+  font-size: 14px;
 }
 
 .profile-photo {
@@ -130,34 +131,6 @@ button:focus-visible {
   border-color: #c4b5fd;
   box-shadow: 0 6px 18px #8b5cf633;
   transform: translateY(-2px);
-}
-
-/* ABOUT ME SECTION */
-
-.about-section {
-  width: 100%;
-  background: linear-gradient(145deg, #191f35, #11182b);
-  border: 1px solid #8b5cf633;
-  border-radius: 18px;
-  text-align: center;
-  padding: 28px;
-  box-shadow: 0 8px 24px #0000001a;
-  animation: fadeInUp 0.8s ease-out 0.1s both;
-  transition:
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.about-section:hover {
-  border-color: #22d3ee66;
-  box-shadow: 0 8px 28px #22d3ee12;
-}
-
-.about-section p {
-  color: #f1f5f9;
-  font-size: 16px;
-  line-height: 1.8;
-  margin-top: 12px;
 }
 
 /* SKILLS SECTION */
@@ -545,6 +518,9 @@ button:focus-visible {
     max-width: 600px;
     padding: 30px;
   }
+  .profile-card p {
+    font-size: 16px;
+  }
   .profile-actions {
     flex-direction: row;
     flex-wrap: wrap;
@@ -552,12 +528,6 @@ button:focus-visible {
   }
   .profile-actions a {
     flex: 1 1 140px;
-  }
-  .about-section {
-    padding: 32px 28px;
-  }
-  .about-section p {
-    font-size: 16px;
   }
   .skills-groups {
     flex-direction: row;
@@ -620,6 +590,9 @@ button:focus-visible {
     max-width: 760px;
     padding: 36px;
   }
+  .profile-card p {
+    font-size: 16px;
+  }
   .profile-photo {
     width: 140px;
     height: 140px;
@@ -635,14 +608,6 @@ button:focus-visible {
     min-width: 0;
     padding: 10px 8px;
     white-space: nowrap;
-  }
-  .about-section {
-    padding: 40px;
-  }
-  .about-section p {
-    max-width: 760px;
-    margin: 16px auto 0;
-    font-size: 16px;
   }
   .skills-section {
     padding: 40px;
