@@ -183,22 +183,23 @@ button:focus-visible {
 }
 
 .skills-list li {
-  background-color: #8b5cf614;
-  color: #e9d5ff;
-  border: 1px solid #a78bfa80;
-  border-radius: 8px;
+  background: transparent;
+  color: #67e8f9;
+  border: 1px solid #22d3ee80;
+  border-radius: 10px;
+  padding: 9px 14px;
   font-size: 14px;
-  padding: 6px 12px;
+  font-weight: 600;
   transition:
     background-color 0.25s ease,
-    border-color 0.25s ease,
-    color 0.25s ease;
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .skills-list li:hover {
   background-color: #22d3ee20;
   border-color: #22d3ee;
-  color: #67e8f9;
+  color: #a5f3fc;
 }
 
 /* PROJECT SECTION */
